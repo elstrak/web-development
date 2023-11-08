@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+  <head>
+    <title>Primzoo - информация о видах</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="images/tigericon.png">
+  </head>
+  <body text="white" background="images/tablebg.png" link="white" alink="#90b7c6" vlink="#90b7c6">
+    <font face="georgia">
+      <p align="left">
+        <font size="5">
+          <a href="index.html"><img src="images/mainicon.png" width="37" align="top"</a>
+          <a href="animals.html">Фауна</a>
+          <a href="table.html"><i>Узнать больше</i></a>
+        </font>
+      </p>
+     <p>
+       <details>
+         <p><summary>Построение графика</summary></p>
+        <form>
+          <p>
+            Значение по оси OX:<br>
+            <label><input type="radio" name="graph" value="class">Класс</label><br>
+            <label><input type="radio" name="graph" value="status">Статус</label><br>
+            <label><input type="radio" name="graph" value="group">Отряд</label><br>
+          </p>
+          <p>
+            Результат:<br>
+            <label><input type="checkbox" name="graph" value="minmass">Минимально известная масса</label><br>
+            <label><input type="checkbox" name="graph" value="avgmass">Средняя известная массаь</label><br>
+            <label><input type="checkbox" name="graph" value="maxmass">Максимально известная масса</label><br>
+            <label><input type="checkbox" name="graph" value="quantity">Число особей</label><br>
+            <label><input type="checkbox" name="graph" value="minarea">Минимально известная продолжительность жизни</label><br>
+            <label><input type="checkbox" name="graph" value="avgarea">Средняя продолжительность жизни</label><br>
+            <label><input type="checkbox" name="graph" value="maxarea">Максимально известная продолжительность жизни</label><br>
+            <label><input type="checkbox" name="graph" value="minkids">Минимально известное число детей</label><br>
+            <label><input type="checkbox" name="graph" value="avgkids">Среднее известное число детей</label><br>
+            <label><input type="checkbox" name="graph" value="maxkids">Максимальное известное число детей</label><br>
+          </p>
+          <p>
+            <input type="button" value="Построить">
+            <input type="reset" value="Сбросить настройки">
+          </p>
+        </form>
+       </details>
+     </p>
+     <p>
+       <details>
+         <p><summary>Фильтр</summary></p>
+         <form>
+           <p>
+             <label>Название вида: <input type="text"></label><br>
+             <label>Класс: <input type="text"></label><br>
+             <label>Масса: от <input type="text"> до <input type="text"></label><br>
+             <label>Продолжительность жизни: от <input type="text"> до <input type="text"></label><br>
+             <label>Рождается детенышей: от <input type="text"> до <input type="text"></label><br>
+           </p>
+           <p>
+             <input type="button" value="Найти">
+             <input type="reset" value="Сбросить фильтр">
+           </p>
+         </form>
+       </details>
+     </p>
+     <p>
+       <details>
+         <summary>Сортировка</summary>
+         <form>
+           <p>Первый уровень:
+           <select>
+             <option>Название вида</option>
+             <option>Класс</option>
+             <option>Отряд</option>
+             <option>Масса</option>
+             <option>Число особей</option>
+             <option>Продолжительность жизни</option>
+             <option>Рождаемость</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>
+           </p>
+           <p>Второй уровень:
+           <select>
+             <option>Название вида</option>
+             <option>Класс</option>
+             <option>Отряд</option>
+             <option>Масса</option>
+             <option>Число особей</option>
+             <option>Продолжительность жизни</option>
+             <option>Рождаемость</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>           
+           </p>
+           <p>Третий уровень:
+           <select>
+             <option>Название вида</option>
+             <option>Класс</option>
+             <option>Отряд</option>
+             <option>Масса</option>
+             <option>Число особей</option>
+             <option>Продолжительность жизни</option>
+             <option>Рождаемость</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>           
+           </p>
+           <p>
+             <input type="button" value="Сортировать">
+             <input type="reset" value="Сбросить">
+           </p>
+         </form>
+       </details>
+     </p>
+     <p>
+       <table cellpadding="5" border="2" align="center">
+         <thead>
+           <tr>
+             <th>Название вида</th>
+             <th>Класс</th>
+             <th>Отряд</th>
+             <th>Масса</th>
+             <th>Число особей</th>
+             <th>Продолжительность жизни</th>
+             <th>Рождаемость</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr><td>Амурский тигр</td><td>Млекопитающие</td><td>Хищные</td><td>243</td><td>400</td><td>15</td><td>3</td></tr></tr> 
+           <tr><td>Дальневосточный леопард</td><td>Млекопитающие</td><td>Хищные</td><td>37</td><td>100</td><td>13</td><td>3</td></tr> 
+           <tr><td>Дальневосточная рысь</td><td>Млекопитающие</td><td>Хищные</td><td>9</td><td>500</td><td>13</td><td>3</td></tr> 
+           <tr><td>Приморский лось</td><td>Млекопитающие</td><td>Парнокопытные</td><td>300</td><td>1000</td><td>14</td><td>1</td></tr> 
+           <tr><td>Амурский орел</td><td>Птицы</td><td>Ястребы</td><td>5</td><td>500</td><td>18</td><td>3</td></tr> 
+           <tr><td>Дальневосточный кролик</td><td>Млекопитающие</td><td>Грызуны</td><td>4</td><td>1000</td><td>4</td><td>10</td></tr> 
+           <tr><td>Приморская нерпа</td><td>Млекопитающие</td><td>Нерпы</td><td>60</td><td>1000</td><td>23</td><td>1</td></tr> 
+           <tr><td>Рыжий олень</td><td>Млекопитающие</td><td>Парнокопытные</td><td>150</td><td>500</td><td>22</td><td>2</td></tr> 
+           <tr><td>Амурская лисица</td><td>Млекопитающие</td><td>Хищные</td><td>7</td><td>200</td><td>8</td><td>3</td></tr> 
+           <tr><td>Дальневосточная черепаха</td><td>Рептилии</td><td>Черепахи</td><td>3</td><td>100</td><td>17</td><td>3</td></tr> 
+           <tr><td>Приморская сова</td><td>Птицы</td><td>Совы</td><td>2</td><td>500</td><td>10</td><td>3</td></tr> 
+	<tr><td>Дальневосточный барбель</td><td>Рыбы</td><td>Лососи</td><td>175</td><td>310</td><td>13</td><td>4</td></tr>
+	<tr><td>Дальневосточный лебедь</td><td>Птицы</td><td>Лебеди</td><td>87</td><td>200</td><td>9</td><td>2</td></tr>
+	<tr><td>Приморский орел</td><td>Птицы</td><td>Ястребы</td><td>112</td><td>320</td><td>10</td><td>3</td></tr>
+	<tr><td>Приморская речная выдра</td><td>Млекопитающие</td><td>Хищные</td><td>58</td><td>140</td><td>15</td><td>4</td></tr>
+	<tr><td>Дальневосточная пятнистая выдра</td><td>Млекопитающие</td><td>Хищные</td><td>91</td><td>250</td><td>12</td><td>5</td></tr>
+	<tr><td>Дальневосточный горный кабан</td><td>Млекопитающие</td><td>Парнокопытные</td><td>324</td><td>410</td><td>18</td><td>4</td></tr>
+	<tr><td>Приморский пушистая соболь</td><td>Млекопитающие</td><td>Хищные</td><td>68</td><td>200</td><td>16</td><td>6</td></tr>
+	<tr><td>Дальневосточный красный медведь</td><td>Млекопитающие</td><td>Хищные</td><td>403</td><td>610</td><td>22</td><td>5</td></tr>
+	<tr><td>Приморский сибирский снегирь</td><td>Птицы</td><td>Снегири</td><td>35</td><td>100</td><td>14</td><td>3</td></tr>
+	<tr><td>Приморская амурская куропатка</td><td>Птицы</td><td>Куропатки</td><td>78</td><td>210</td><td>11</td><td>4</td></tr>
+	<tr><td>Дальневосточный барсук</td><td>Млекопитающие</td><td>Хищные</td><td>102</td><td>280</td><td>13</td><td>5</td></tr>
+	<tr><td>Сибирский летучий крысолов</td><td>Млекопитающие</td><td>Хищные</td><td>57</td><td>160</td><td>10</td><td>3</td></tr>
+	<tr><td>Сибирский песец</td><td>Млекопитающие</td><td>Хищные</td><td>48</td><td>130</td><td>12</td><td>4</td></tr>
+	<tr><td>Амурский тюлень</td><td>Млекопитающие</td><td>Тюлени</td><td>195</td><td>370</td><td>14</td><td>6</td></tr>
+	<tr><td>Приморский заяц</td><td>Млекопитающие</td><td>Зайцы</td><td>63</td><td>150</td><td>11</td><td>4</td></tr>
+	<tr><td>Сибирский волк</td><td>Млекопитающие</td><td>Хищные</td><td>157</td><td>330</td><td>19</td><td>5</td></tr>
+	<tr><td>Дальневосточная чернеть</td><td>Птицы</td><td>Чернети</td><td>42</td><td>120</td><td>8</td><td>3</td></tr>
+	<tr><td>Приморская краснозобая лягушка</td><td>Земноводные</td><td>Лягушки</td><td>31</td><td>80</td><td>12</td><td>4</td></tr>
+	<tr><td>Амурская акула</td><td>Рыбы</td><td>Акулы</td><td>225</td><td>390</td><td>17</td><td>6</td></tr>
+	<tr><td>Приморский еж</td><td>Млекопитающие</td><td>Ежи</td><td>45</td><td>110</td><td>9</td><td>3</td></tr>
+	<tr><td>Дальневосточная гадюка</td><td>Змеи</td><td>Гадюки</td><td>30</td><td>70</td><td>11</td><td>4</td></tr>
+	<tr><td>Соколиная куропатка</td><td>Птицы</td><td>Куропатки</td><td>54</td><td>160</td><td>8</td><td>2</td></tr>
+	<tr><td>Сибирская сойка</td><td>Птицы</td><td>Сойки</td><td>68</td><td>180</td><td>10</td><td>3</td></tr>
+	<tr><td>Амурская цапля</td><td>Птицы</td><td>Цапли</td><td>62</td><td>140</td><td>9</td><td>2</td></tr> 
+	<tr><td>Дальневосточная росомаха</td><td>Млекопитающие</td><td>Хищные</td><td>128</td><td>265</td><td>14</td><td>5</td></tr>
+	<tr><td>Амурский дятел</td><td>Птицы</td><td>Дятлы</td><td>92</td><td>180</td><td>12</td><td>4</td></tr>
+	<tr><td>Сибирская ржанка</td><td>Птицы</td><td>Ржанки</td><td>75</td><td>160</td><td>11</td><td>3</td></tr>
+	<tr><td>Черноголовая чайка</td><td>Птицы</td><td>Чайки</td><td>65</td><td>140</td><td>10</td><td>3</td></tr>
+	<tr><td>Приморский дельфин</td><td>Млекопитающие</td><td>Дельфины</td><td>200</td><td>400</td><td>16</td><td>6</td></tr>
+	<tr><td>Амурская бородатая улитка</td><td>Моллюски</td><td>Улитки</td><td>85</td><td>220</td><td>13</td><td>5</td></tr>
+	<tr><td>Приморский муравьед</td><td>Млекопитающие</td><td>Муравьеды</td><td>150</td><td>310</td><td>15</td><td>4</td></tr>
+	<tr><td>Амурский горный козел</td><td>Млекопитающие</td><td>Парнокопытные</td><td>180</td><td>360</td><td>17</td><td>5</td></tr>
+	<tr><td>Сибирский рябчик</td><td>Птицы</td><td>Рябчики</td><td>78</td><td>200</td><td>12</td><td>4</td></tr>
+	<tr><td>Амурская косуля</td><td>Млекопитающие</td><td>Косули</td><td>112</td><td>240</td><td>14</td><td>4</td></tr>
+	<tr><td>Сибирская ворона</td><td>Птицы</td><td>Вороны</td><td>64</td><td>150</td><td>11</td><td>3</td></tr>
+	<tr><td>Амурская ужовка</td><td>Змеи</td><td>Ужовки</td><td>105</td><td>230</td><td>13</td><td>4</td></tr>
+	<tr><td>Амурский жаворонок</td><td>Птицы</td><td>Жаворонки</td><td>72</td><td>170</td><td>10</td><td>3</td></tr>
+	<tr><td>Дальневосточная белка</td><td>Млекопитающие</td><td>Белки</td><td>95</td><td>210</td><td>12</td><td>5</td></tr>
+	<tr><td>Японский жук-олень</td><td>Насекомые</td><td>Жуки-олени</td><td>88</td><td>240</td><td>15</td><td>4</td></tr>
+	<tr><td>Сибирская лягушка-квакша</td><td>Земноводные</td><td>Лягушки</td><td>74</td><td>190</td><td>13</td><td>4</td></tr>
+	<tr><td>Амурский моллюск-бронебойщик</td><td>Моллюски</td><td>Бронебойщики</td><td>98</td><td>260</td><td>16</td><td>5</td></tr>
+	<tr><td>Сибирская стрекоза</td><td>Насекомые</td><td>Стрекозы</td><td>82</td><td>180</td><td>14</td><td>4</td>
+	<tr><td>Горная грязевая черепаха</td><td>Рептилии</td><td>Черепахи</td><td>187</td><td>425</td><td>14</td><td>28</td></tr>
+	<tr><td>Сибирская песчанка</td><td>Млекопитающие</td><td>Грызуны</td><td>33</td><td>72</td><td>9</td><td>19</td></tr>
+	<tr><td>Амурский толстолобик</td><td>Рыбы</td><td>Толстолобики</td><td>295</td><td>600</td><td>17</td><td>31</td></tr>
+	<tr><td>Амурский бурундук</td><td>Млекопитающие</td><td>Бурундуки</td><td>8</td><td>20</td><td>4</td><td>11</td></tr>
+	<tr><td>Амурская черная стерлядь</td><td>Рыбы</td><td>Стерляди</td><td>215</td><td>520</td><td>13</td><td>27</td></tr>
+	<tr><td>Амурская рыжая белка</td><td>Млекопитающие</td><td>Белки</td><td>12</td><td>30</td><td>5</td><td>15</td></tr>
+	<tr><td>Сибирский тетерев</td><td>Птицы</td><td>Тетерева</td><td>22</td><td>48</td><td>8</td><td>21</td></tr>         
+         </tbody>
+       </table>
+     </p>
+     <p>
+       <h3>Информация в таблице частично не является правдой</h3>
+     </p>
+     </body>
+     
